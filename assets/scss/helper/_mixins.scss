@@ -1,0 +1,9 @@
+@mixin col-title {
+    background-image: linear-gradient(to right, $dgreen , $dash);
+    color: $white;
+    text-align: center;
+    padding: 5px 0;
+    h2{
+        font-size: $font + 5px ;
+    }
+}
