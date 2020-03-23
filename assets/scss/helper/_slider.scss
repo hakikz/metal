@@ -2,46 +2,28 @@
     margin-top: 20px;
 }
 
-.right-col{
-    // border: 1px solid $dgreen;
+.wings{
+    margin: 30px 0 50px;
     .col-title{
         @include col-title;
-
+        padding: 7px 15px;
+        margin-bottom: 30px;
     }
-    #carousellogo{
-        .img-cus{
-            max-width: 100%;
-            border: 1px solid $dgreen;
-            margin-bottom: 4px;
-        }
-    }
-    .concerns{
-        ul{
-            padding: 0;
-            list-style: none;
-            li{
-                a{
-                    font-size: $font;
-                    padding: 10px 0;
-                    text-align: center;
-                    display: block;
-                    color: $dgreen;
-                    transition: 0.5s all ease-in-out;
-                    text-decoration: none;
-
-                    &:hover{
-                        background-color: $dgreen;
-                        color: $white;
-                    }
-                }
+    .right-col{
+        // border: 1px solid $dgreen;
+        #carousellogo{
+            .img-cus{
+                max-width: 100%;
+                margin-bottom: 4px;
             }
         }
-
-        .carousel-control-prev,
-        .carousel-control-next{
-            span{
-                color: $dgreen;
-                font-size: $font + 15px;
+        .wing{
+            border: 1px solid $dgreen;
+            div{
+                img{
+                    padding: 0 45px;
+                    border-radius: 5px;
+                }
             }
         }
     }

@@ -47,7 +47,8 @@
                     transition: 0.5s all ease-in-out;
 
                     &:hover{
-                        background-color: rgb(50, 168, 82);
+                        background-color: $white;
+                        color: $dgreen !important;
                     }
                 }
                 &:last-child{

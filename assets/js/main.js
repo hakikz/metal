@@ -29,6 +29,13 @@ $(".logo").slick({
     autoplaySpeed: 2000,
 });
 
+$(".wing").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+});
+
 
 
 $(window).on('load', function () {
