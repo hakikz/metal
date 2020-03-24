@@ -29,11 +29,11 @@
                 border-bottom: 1px solid $white;
                 padding: 8px 15px;
                 font-size: $font - 2px;
-                background-color: $dgreen !important;
-                color: $white !important;
+                background-color: $dgreen;
+                color: $white;
 
                 &:hover{
-                    background-color: #222 !important;
+                    background-color: $dash!important;
                     color: $white !important;
                 }
             }
@@ -49,10 +49,10 @@
             opacity: 1;
             visibility: visible;
         }
-        a{
-            background-color: $white;
-            color: $dgreen;
-        }
+        // a{
+        //     background-color: $dash;
+        //     color: $white;
+        // }
     }
 }
 

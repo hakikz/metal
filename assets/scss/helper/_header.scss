@@ -13,7 +13,6 @@
             position: absolute;
             top: 0;
             left: 0;
-            // border: 4px solid $dgreen;
             padding: 15px;
             img{
                 max-width: 200px;
@@ -34,8 +33,6 @@
         ul{
             display: flex;
             background-color: $dgreen;
-            // justify-content: flex-end;
-            // width: 100%;
             li{
                 padding: 0 !important;
                 position: relative;
@@ -70,7 +67,7 @@
                 }
 
                 &.has-child-1{
-                    ul{
+                    .sub-nav-1{
                         padding: 0;
                         list-style: none;
                         position: absolute;
@@ -89,12 +86,12 @@
                                 border-bottom: 1px solid $white;
                                 padding: 8px 15px;
                                 font-size: $font - 2px;
-                                background-color: $dgreen !important;
-                                color: $white !important;
+                                background-color: $dgreen;
+                                color: $white;
 
                                 &:hover{
-                                    background-color: $dash !important;
-                                    color: $white !important;
+                                    background-color: $dash;
+                                    color: $white;
                                 }
                             }
                             &:last-child{
@@ -104,25 +101,56 @@
                             }
                             &.has-child-2{
                                 @include inner_ul;
-                                ul{
+                                li{
+                                    a{
+                                        background-color: $dgreen !important;
+                                    }
+                                }
+                                .sub-nav-2{
                                     li{
                                         &.has-child-3{
                                             @include inner_ul;
+                                            .sub-nav-3{
+                                                li{
+                                                    a{
+                                                        background-color: $dgreen !important;
+                                                    }
+                                                    &:hover{
+                                                        a{
+                                                            background-color: $dash !important;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        &:hover{
+                                            a{
+                                                background-color: $dash !important;
+                                            }
                                         }
                                     }
+                                } 
+                            }
+
+                            &:hover{
+                                a{
+                                    background-color: $dash;
                                 }
                             }
                         }
                     }
                     &:hover{
-                        ul{
+                        .sub-nav-1{
                             opacity: 1;
                             visibility: visible;
                         }
-                        a{
-                            background-color: $white;
-                            color: $dgreen;
-                        }
+                    }
+                }
+                &:hover{
+                    a{
+                        background-color: $white;
+                        color: $dgreen;
                     }
                 }
             }
