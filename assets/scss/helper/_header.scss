@@ -37,24 +37,93 @@
             // justify-content: flex-end;
             // width: 100%;
             li{
+                padding: 0 !important;
+                position: relative;
                 a{
-                    padding: 5px 15px 7px !important;
-                    color: $white !important;
+                    padding: 6px 15px;
+                    color: $white;
                     font-family: $play;
                     font-weight: $med;
                     font-size: $font - 1px;
                     border-right: 1px solid $white;
                     transition: 0.5s all ease-in-out;
+                    text-decoration: none;
+                    display: inline-block;
 
                     &:hover{
                         background-color: $white;
-                        color: $dgreen !important;
+                        color: $dgreen;
                     }
                 }
+
+                &.active{
+                    a{
+                        background-color: $dash;
+                        color: $white;
+                    }
+                }
+
                 &:last-child{
                     a{
                         border-right: 0px solid;
                     }   
+                }
+
+                &.has-child-1{
+                    ul{
+                        padding: 0;
+                        list-style: none;
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        min-width: 200px;
+                        top: 33px;
+                        left: 0;
+                        z-index: 9;
+                        opacity: 0;
+                        visibility: hidden;
+                        li{
+                            a{
+                                display: block;
+                                border-right: none;
+                                border-bottom: 1px solid $white;
+                                padding: 8px 15px;
+                                font-size: $font - 2px;
+                                background-color: $dgreen !important;
+                                color: $white !important;
+
+                                &:hover{
+                                    background-color: $dash !important;
+                                    color: $white !important;
+                                }
+                            }
+                            &:last-child{
+                                a{
+                                    border-bottom: 0px solid;
+                                }   
+                            }
+                            &.has-child-2{
+                                @include inner_ul;
+                                ul{
+                                    li{
+                                        &.has-child-3{
+                                            @include inner_ul;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                        ul{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        a{
+                            background-color: $white;
+                            color: $dgreen;
+                        }
+                    }
                 }
             }
         }
