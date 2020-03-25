@@ -49,12 +49,20 @@
             opacity: 1;
             visibility: visible;
         }
-        // a{
-        //     background-color: $dash;
-        //     color: $white;
-        // }
     }
 }
+
+
+@mixin img_scale {
+    img{
+        transform: scale(1);
+        transition: 1s transform ease-in-out;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+
 
 @mixin corporate_av {
     .corporate-av{
