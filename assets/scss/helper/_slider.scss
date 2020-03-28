@@ -5,7 +5,7 @@
 .wings{
     margin: 30px 0 50px;
     .col-title{
-        @include col-title;
+        @include col-title($dgreen, $dash);
         padding: 7px 15px;
         margin-bottom: 30px;
     }

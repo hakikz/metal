@@ -2,7 +2,7 @@
     @include corporate_av;
 
     .col-title{
-        @include col-title;
+        @include col-title($dgreen, $dash);
         padding: 7px 22px;
     }
 
@@ -36,21 +36,6 @@
                 }
 
             }
-        }
-    }
-
-    &.contact{
-        .contact-map,
-        .contact-form{
-            margin-top: 30px;
-        }
-
-        .contact-form{
-            margin-bottom: 50px;
-        }
-        .side-part{
-            background-color: #f4f4f4;
-            padding: 0 20px 20px 20px;
         }
     }
 
@@ -122,5 +107,32 @@
     .hero-img{
         overflow: hidden;
         @include img_scale;
+    }
+
+    &.contact{
+        .contact-map,
+        .contact-form{
+            margin-top: 30px;
+        }
+
+        .contact-form{
+            margin-bottom: 50px;
+        }
+        .side-part{
+            background-color: #f4f4f4;
+            padding: 0 20px 20px 20px;
+        }
+    }
+
+    &.management{
+        .img-container{
+            text-align: center;
+            small{
+                &.title{
+                    display: block;
+                    margin-top: 30px;
+                }
+            }
+        }
     }
 }

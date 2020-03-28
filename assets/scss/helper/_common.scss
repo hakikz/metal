@@ -18,7 +18,7 @@ h6{
 .partner{
     margin: 50px 0 30px;
     .col-title{
-        @include col-title;
+        @include col-title($dgreen, $dash);
         margin-bottom: 30px;
         h2{
             padding: 0 15px;

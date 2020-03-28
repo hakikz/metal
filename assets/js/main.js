@@ -40,7 +40,7 @@ $(".wing").slick({
 
 $(window).on('load', function () {
     $('#main_slider').nivoSlider({
-        effect: 'random',                 // Specify sets like: 'fold,fade,sliceDown' 
+        effect: 'boxRandom,fold,slideInRight,slideInLeft,sliceUp',                 // Specify sets like: 'fold,fade,sliceDown' 
         slices: 15,                       // For slice animations 
         boxCols: 8,                       // For box animations 
         boxRows: 4,                       // For box animations 

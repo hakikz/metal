@@ -4,7 +4,7 @@
     .news-center{
         display: block;
         .col-title{
-            @include col-title;
+            @include col-title($dgreen, $dash);
         }
         .all-post{
             border: 1px solid $dgreen;
@@ -59,7 +59,7 @@
 
     .feature-product{
         .col-title{
-            @include col-title;
+            @include col-title($dgreen, $dash);
         }
 
         .fea-img{
